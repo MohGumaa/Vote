@@ -1,0 +1,60 @@
+nav {
+  border-bottom: 3px solid #e8491d;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+  padding: 0 8rem !important;
+}
+
+.showcase::after {
+  content: "";
+  margin-top: 0.2rem;
+  height: 78vh;
+  width: 100%;
+  background: url("Flag_of_Sudan.gif") no-repeat
+    center/cover;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+  overflow: none;
+}
+
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.showcase:hover .content {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 105px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+  color: #000;
+}
+
+.mt-3 {
+  margin-top: ($spacer * 0.25) !important;
+}
+
+div.vote > button {
+  width: 100%;
+}
